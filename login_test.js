@@ -9,7 +9,7 @@ Scenario('Doğru Kullanıcı adı Doğru şifre @testcase1',  ({ I }) => {
     I.waitForElement('//input[@id="continue"]');
     I.click('//input[@id="continue"]');
     I.waitForElement('//input[@id="ap_password"]');
-    I.fillField('//input[@id="ap_password"]','Qwe05416281407');
+    I.fillField('//input[@id="ap_password"]','Qwerty');
     I.click('//input[@id="signInSubmit"]');
     //I.waitForElement("//*contains(text(), 'cannot find')] ");
     I.seeElement('//*[contains(text(),"Hello, Taner")]');
@@ -28,7 +28,7 @@ Scenario('Doğru Kullanıcı adı Yanlış şifre @testcase2',  ({ I }) => {
     I.waitForElement('//input[@id="ap_password"]');
     I.fillField('//input[@id="ap_password"]','qwerty');
     I.click('//input[@id="signInSubmit"]');
-    I.seeElement('//h4[contains(text(),"Important Message!")]');
+    I.seeElement('//h4[contains(text(),"Important Message!)]');
     
     
     
